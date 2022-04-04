@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Training</title>
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+
+<div class="timer">
+
+    <div class="timer__items">
+        <div class="number">
+            <button class="increase increase_min_up"><img src="public/btn_up.svg" alt=""></button>
+            <div class="timer__item timer__minutes">00</div>
+            <button  class="increase increase_min_down"><img src="public/btn_down.svg" alt=""></button>
+        </div>
+
+        <div class="number">
+            <button class="increase increase_sec_up"><img src="public/btn_up.svg" alt=""></button>
+            <div class="timer__item timer__seconds">00</div>
+            <button  class="increase increase_sec_down"><img src="public/btn_down.svg" alt=""></button>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="buttons">
+
+            <button class="start_btn">start</button>
+            <button class="pause_btn"><img src="public/pause-button-svgrepo-com.svg" alt=""></button>
+
+
+        </div>
+
+        <div class="preTimeContent">
+            <div class="preTimeText">Time before start: <span class="preTime">5</span> sec</div>
+            <input type="range" min="0" max="30" value="5" class="slider" id="myRange">
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <h1 class="preTimer">00</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+<script src="js/index.js" type="module"></script>
+
+</html>
